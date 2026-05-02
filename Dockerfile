@@ -1,7 +1,8 @@
 FROM eclipse-temurin:21-jdk
 
-WORKDIR /app
+ENV TZ=Asia/Kolkata
 
+WORKDIR /app
 COPY . .
 
 RUN chmod +x mvnw
